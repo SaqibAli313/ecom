@@ -1,0 +1,109 @@
+.site_wrap {
+    margin: 20px;
+    position:relative;
+}
+.signup_wrapper {
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.add_user_form {
+    background-color: #1b79e6;
+    padding: 20px;
+    max-width: 400px;
+    margin: 30px 0px;
+    width:100%;
+    border-radius:4px;
+}
+.add_user_form input {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border: none;
+    font-size: 13px;
+}
+.add_user_form .input_wrap {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.add_user_form input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #1b79e6;
+}
+.signup_wrap_heading{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0px -1px 7px 3px rgba(0,0,0,0.3);
+}
+.header .logo {
+    max-width: 150px;
+}
+.header .logo img {
+    max-width: 100%;
+}
+ul.form_errors {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    color: #fff;
+    list-style: none;
+    padding: 0px !important;
+}
+ul.form_errors li {
+    background-color: red;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+form.profile_pic_form input[type="file"] {
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    z-index: 9;
+    cursor:pointer;
+}
+form.profile_pic_form .input_wrap {
+    position: relative;
+}
+form.profile_pic_form .input_wrap img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+    width: 100px;
+    cursor:pointer;
+    border: 1px solid #eee;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.user_profile_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px;
+}
+.user_profile_inner_wrapper {
+    width: 100%;
+    max-width: 500px;
+    background-color: #eee;
+    padding: 20px;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+}
+form.profile_pic_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -100px;
+}
