@@ -1,14 +1,11 @@
 @extends('layout')
 @section('content')
 <div class="signup_wrapper">
-<form class="add_user_form" method="POST">
+<form class="add_user_form" action="/signup" method="POST">
 <h1 class="signup_wrap_heading">Join Us</h1>
 	@csrf
 	<div class="input_wrap">
-		<input type="text" name="first_name" placeholder="First Name">
-	</div>
-	<div class="input_wrap">
-		<input type="text" name="last_name" placeholder="Last Name">
+		<input type="text" name="name" placeholder="Enter Your Name">
 	</div>
 	<div class="input_wrap">
 		<input type="email" name="email" placeholder="Enter Your Email">

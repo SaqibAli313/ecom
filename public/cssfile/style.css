@@ -107,3 +107,210 @@ form.profile_pic_form {
     flex-direction: column;
     margin-top: -100px;
 }
+.carousel-caption {
+    background-color: #0000006e;
+    margin-bottom: 40px;
+}
+div#myCarousel img {
+    height: 400px !important;
+}
+.user_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.user-name {
+    font-size: 15px;
+    line-height: normal;
+    margin: 0 10px 0px 0px;
+}
+.product_image_wrap img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: fill;
+    height: 300px;
+}
+.myproducts_inner_wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 20px;
+}
+.product_item {
+    background-color: #eee;
+    border: 1px solid #bbb7b7;
+    border-radius: 5px;
+    max-width: 100%;
+    max-width: 95%;
+    overflow:hidden;
+}
+div.product_desc{
+    padding: 20px;
+}
+.my_product_image_wrap img {
+    height: 47px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.my_product_image_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+table.my_products td {
+    border: 1px solid #555;
+    padding: 10px;
+}
+table.my_products {
+    width: 100%;
+    margin-top:20px;
+}
+table.my_products p {
+    margin: 0px;
+}
+table.my_products th {
+    font-size: 17px;
+    padding: 20px;
+    border: 1px solid #555;
+}
+.my_products_wrapper a.add-product {
+    background-color: #337ab7;
+    padding: 10px;
+    color: #fff;
+}
+a.product-action {
+    padding: 10px;
+    margin: 10px;
+    color: #fff !important;
+}
+a.product-action.edit {
+    background-color: #337ab7;
+}
+a.product-action.delete {
+    background-color: #ff2929;
+}
+ul.navbar {
+    list-style: none;
+    display: flex;
+    min-height: unset;
+    margin: 0px;
+}
+ul.navbar li {
+    margin: 0px 10px;
+    line-height: normal;
+    position: relative;
+}
+ul.navbar li a.nav-link.logout {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px;
+}
+.navbar:before, .navbar:after{
+    display:none;
+}
+div.navbar {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    min-height: unset;
+}
+input[type=file]{
+    padding: 0px !important;
+}
+.old-product-image img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+.old-product-image {
+    text-align: left;
+    color: #fff;
+}
+.product_detail_image img {
+    height: 270px;
+    max-width: 100%;
+    padding-right: 50px;
+    border-right: 1px solid #eee;
+}
+.product_detail_wrapper {
+    display: flex;
+    justify-content: center;
+}
+.product_detail_item {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.product_detail_desc h3 {
+    margin: 0px;
+}
+.product_detail_desc {
+    margin-left: 50px;
+    position: relative;
+}
+.product_detail_inner_wrapper {
+    width: 100%;
+    max-width: 600px;
+}
+.product_detail_inner_wrapper h3 {
+    margin-top: 10px;
+}
+.buy_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy_btn form {
+    margin: 0px 10px 0px 0px;
+}
+span.cart_products_count {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    background-color: #ff2e2e;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 11px;
+}
+div.cart_product_img img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.cart_innerwrappper table th, .cart_innerwrappper table td {
+    border: 1px solid #c2c2c2;
+    padding: 10px;
+}
+.cart_innerwrappper table {
+    width: 100%;
+}
+.cart-head {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-head h3 {
+    margin: 0;
+}
+.order-btn {
+    text-align: right;
+    margin: 10px 0px 0px;
+}
+.search_form-wrap form {
+    margin: 0;
+    display: flex;
+}
+.search_form-wrap form input[type="text"] {
+    height: 35px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+}

@@ -1,30 +1,50 @@
+<?php
+use App\Http\Controllers\ProductCotroller;
+$total = ProductCotroller::cartProducts();
+?>
 <header class="header">
   <div class="logo">
-    <img src="{{asset('images/logo.png') }}">
+    <a href="/"><img src="{{asset('images/logo.png') }}"></a>
   </div>
-			<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Resto</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+  @if (Auth::check())
+  <div class="search_form-wrap">
+    <form action="/search" method="POST">
+      @csrf
+      <input type="text" name="search" placeholder="Search Products">
+      <input class="btn btn-primary" type="submit" value="Search">
+    </form>
+  </div>
+			 <div class="navbar">
+  <div class="navbar_inner_wrap">
+    <ul class="navbar">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="list">List</a>
+        <a class="nav-link" href="/myproducts">My products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Search</a>
+        <a class="nav-link" href="/cart">Cart</a>
+        <span class="cart_products_count">{{$total}}</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Register</a>
+        <a class="nav-link logout" href="/logout">Logout</a>
       </li>
     </ul>
-  </div> -->
-</nav>
+  </div> 
+</div>
+@else
+<div class="navbar">
+  <div class="navbar_inner_wrap">
+    <ul class="navbar">
+      <li class="nav-item">
+        <a class="nav-link" href="/login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/signup">Register</a>
+      </li>
+      </ul>
+  </div>
+</div>
+@endif
 </header>

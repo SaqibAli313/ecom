@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 <div class="signup_wrapper login_wrapper">
-<form class="add_user_form signin_form" method="POST">
+<form class="add_user_form signin_form" method="POST" action="/login">
 <h1 class="signup_wrap_heading">Login</h1>
 	@csrf
 	<div class="input_wrap">
